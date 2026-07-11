@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- Landing + pricing page. Ventriloc design language (matches the app).
+     Placeholders to fill at launch: product NAME, domain, the download URL
+     (GitHub release .dmg), and the Lemon Squeezy checkout link. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClaudeBar — the on-device coach for building with AI</title>
+<style>
+  :root{
+    --canvas:#f6f6f4; --surface:#fff; --hair:#e6e6e3; --hair2:#d7d7d3;
+    --ink:#202020; --ink2:#4d4d4d; --ink3:#828282; --gold:#816729; --gold-soft:#f6f0e0;
+    --ok:#1e9e57; --sans:system-ui,-apple-system,"Segoe UI",sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--canvas);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:940px;margin:0 auto;padding:0 24px}
+  a{color:var(--gold);text-decoration:none}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3)}
+
+  header{padding:80px 0 20px}
+  .brand{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--ink2)}
+  .dot{width:9px;height:9px;border-radius:2px;background:var(--gold)}
+  h1{font-size:clamp(34px,6vw,56px);line-height:1.03;letter-spacing:-.02em;font-weight:680;margin:26px 0 0;max-width:16ch;text-wrap:balance}
+  .lede{font-size:clamp(17px,2.3vw,20px);color:var(--ink2);max-width:56ch;margin:20px 0 0}
+
+  .cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:30px}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:12px 20px;border-radius:9px;border:1px solid var(--hair2)}
+  .btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .brew{font-family:var(--mono);font-size:13px;color:var(--ink2);background:var(--surface);border:1px solid var(--hair);border-radius:9px;padding:12px 16px}
+  .brew b{color:var(--ink)}
+  .fine{font-family:var(--mono);font-size:11.5px;color:var(--ink3);margin-top:16px}
+
+  section{padding:44px 0;border-top:1px solid var(--hair)}
+  h2{font-size:clamp(22px,3vw,28px);letter-spacing:-.01em;font-weight:640;margin:0 0 6px}
+  .sub{color:var(--ink2);max-width:60ch;margin:0 0 26px}
+
+  .split{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .card{background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:24px}
+  .card h3{margin:0 0 4px;font-size:16px}
+  .card.pro{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+  .card .tag{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink3)}
+  .card.pro .tag{color:var(--gold)}
+  ul{list-style:none;margin:14px 0 0;padding:0}
+  li{padding:7px 0 7px 24px;position:relative;color:var(--ink2);font-size:14.5px;border-top:1px solid var(--hair)}
+  li:first-child{border-top:0}
+  li::before{content:"›";position:absolute;left:4px;color:var(--ink3)}
+  .card.pro li::before{content:"✓";color:var(--gold);font-size:12px}
+
+  .price{display:flex;align-items:baseline;gap:10px;margin:2px 0 16px}
+  .price .n{font-family:var(--mono);font-size:40px;font-weight:600;letter-spacing:-.02em}
+  .price .u{color:var(--ink3);font-size:14px}
+  .price .n small{font-size:15px;color:var(--ink3)}
+
+  .privacy{display:flex;gap:14px;align-items:flex-start;background:var(--gold-soft);border-radius:12px;padding:20px 22px;font-size:14.5px;color:#5c4a1a}
+  footer{padding:40px 0 70px;color:var(--ink3);font-size:12.5px;border-top:1px solid var(--hair)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand"><span class="dot"></span> ClaudeBar</div>
+    <h1>The on-device coach for how you build with AI.</h1>
+    <p class="lede">A native macOS menu-bar app that tracks your Claude Code &amp; Codex usage limits — and, unlike every other meter, tells you how you're actually getting better as an AI engineer. Everything is computed on your Mac. Nothing is uploaded.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/daudnofel/ai-coach/releases/latest">Download for macOS</a>
+      <span class="brew">$ brew install --cask <b>daudnofel/tap/claudebar</b></span>
+    </div>
+    <div class="fine">macOS 14+ · Apple Silicon &amp; Intel · free 14-day trial of Pro</div>
+  </header>
+
+  <section>
+    <p class="eyebrow">Meter → coach</p>
+    <h2>Everyone shows you the limit. We show you the trajectory.</h2>
+    <p class="sub">Usage trackers answer "how much is left." ClaudeBar answers the question that actually makes you better: <em>am I improving, and where's the next gain?</em> — from an AI Engineer Score, weekly coaching, a builder profile, and prompt &amp; workflow signals mined from your own sessions.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">Pricing</p>
+    <h2>Free to track. Pro to improve.</h2>
+    <p class="sub">Start with a 14-day trial of everything. Keep the meter free forever, or unlock the coaching engine with a one-time purchase.</p>
+    <div class="split">
+      <div class="card">
+        <div class="tag">Free</div>
+        <h3>The meter</h3>
+        <ul>
+          <li>Real session &amp; weekly usage limits + resets</li>
+          <li>Cost &amp; token tracking (Claude + Codex)</li>
+          <li>Trust checks &amp; tool recommendations</li>
+          <li>Your AI Engineer Score (headline number)</li>
+        </ul>
+      </div>
+      <div class="card pro">
+        <div class="tag">Pro</div>
+        <h3>The coach</h3>
+        <div class="price"><span class="n">$29</span><span class="u">one-time · incl. 12 months of updates</span></div>
+        <ul>
+          <li>Full Score breakdown + 90-day trends</li>
+          <li>Weekly coaching report &amp; history</li>
+          <li>Builder Profile + shareable card</li>
+          <li>Prompt &amp; workflow coaching</li>
+          <li>Time Saved, git Yield &amp; fun-fact cards</li>
+          <li>AI-written insights (bring your own key)</li>
+        </ul>
+        <div class="cta"><a class="btn primary" href="https://claudebar.app/pro">Buy Pro — $29</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="privacy">
+      <span aria-hidden="true">🔒</span>
+      <div><b>It never phones home.</b> Your transcripts, prompts, and code are read and analyzed entirely on your Mac. No account, no telemetry, no upload — the coaching, the score, and the profile are all computed locally. That's the whole point.</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap" style="padding:0">© 2026 ClaudeBar · Not affiliated with Anthropic or OpenAI · <a href="https://github.com/daudnofel/claudebar">Source</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
